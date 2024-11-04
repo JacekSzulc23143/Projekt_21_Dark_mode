@@ -4,6 +4,24 @@
 	padding: 0;
 }
 
+[data-mode="light"] {
+	--bg-color: #eee;
+	--heading-color: #000;
+	--text-color: #333;
+	--link-color: #06e;
+	--btn-color: #333;
+	--i-color: #eee;
+}
+
+[data-mode="dark"] {
+	--bg-color: #333;
+	--heading-color: #fff;
+	--text-color: #ddd;
+	--link-color: #0e6;
+	--btn-color: #ddd;
+	--i-color: #333;
+}
+
 body {
 	display: flex;
 	justify-content: center;
@@ -12,6 +30,7 @@ body {
 	height: 100vh;
 	padding: 2em;
 	font-family: "Montserrat", sans-serif;
+	background-color: var(--bg-color);
 }
 
 button {
@@ -22,19 +41,27 @@ button {
 	height: 80px;
 	border-radius: 6px;
 	cursor: pointer;
+	background-color: var(--btn-color);
 }
 
 h1 {
 	margin-bottom: 1em;
 	text-transform: uppercase;
+	color: var(--heading-color);
 }
 
 p {
 	margin-bottom: 1em;
+	color: var(--text-color);
 }
 
 a {
 	margin-bottom: 1em;
 	text-decoration: none;
 	font-size: 2rem;
+	color: var(--link-color);
+}
+
+i {
+	color: var(--i-color);
 }
