@@ -63,5 +63,6 @@ a {
 }
 
 i {
+	font-size: x-large;
 	color: var(--i-color);
 }
